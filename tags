@@ -1,0 +1,343 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Dispatcher	src/Dispatcher.php	/^class Dispatcher$/;"	c
+Index	src/Configurations/Index.php	/^class Index $/;"	c
+Index	src/Index.php	/^class Index $/;"	c
+Index	src/Indexes.php	/^class Index $/;"	c
+Resolver	src/Resolver.php	/^class Resolver $/;"	c
+Route	src/Entities/Route.php	/^class Route $/;"	c
+Route	src/Route.php	/^class Route $/;"	c
+RouteComponent	src/Entities/RouteComponent.php	/^class RouteComponent$/;"	c
+RouteComponent	src/RouteComponent.php	/^class RouteComponent$/;"	c
+RouteComponentTest	tests/RouteComponentTest.php	/^class RouteComponentTest extends PHPUnit_Framework_TestCase $/;"	c
+RouteTest	tests/RouteTest.php	/^class RouteTest extends PHPUnit_Framework_TestCase $/;"	c
+Router	src/Router.php	/^class Router$/;"	c
+RouterTest	tests/RouterTest.php	/^class RouterTest extends PHPUnit_Framework_TestCase $/;"	c
+RoutesCollection	src/RoutesCollection.php	/^class RoutesCollection $/;"	c
+RoutesCollectionTest	tests/RoutesCollectionTest.php	/^class RoutesCollectionTest extends PHPUnit_Framework_TestCase$/;"	c
+Url	src/Entities/Url.php	/^class Url $/;"	c
+Url	src/Url.php	/^class Url $/;"	c
+UrlComponent	src/Entities/UrlComponent.php	/^class UrlComponent$/;"	c
+UrlComponentTest	tests/UrlComponentTest.php	/^class UrlComponentTest extends PHPUnit_Framework_TestCase $/;"	c
+UrlTest	tests/UrlTest.php	/^class UrlTest extends PHPUnit_Framework_TestCase$/;"	c
+__construct	src/Dispatcher.php	/^    public function __construct($url, $method)$/;"	f
+__construct	src/Entities/Route.php	/^    public function __construct(array $routeData)$/;"	f
+__construct	src/Entities/RouteComponent.php	/^    public function __construct($component)$/;"	f
+__construct	src/Entities/Url.php	/^    public function __construct($url)$/;"	f
+__construct	src/Entities/UrlComponent.php	/^    public function __construct($component)$/;"	f
+__construct	src/Resolver.php	/^    public function __construct(routesCollection $routesCollection)$/;"	f
+__construct	src/Route.php	/^    public function __construct(array $routeData)$/;"	f
+__construct	src/RouteComponent.php	/^    public function __construct($component)$/;"	f
+__construct	src/Router.php	/^    public function __construct($/;"	f
+__construct	src/RoutesCollection.php	/^    public function __construct(array $routes)$/;"	f
+__construct	src/Url.php	/^    public function __construct($url)$/;"	f
+allowedMethods	src/Entities/Route.php	/^                $allowedMethods = implode(', ', $this->allowedMethods);$/;"	v
+allowedMethods	src/Entities/Route.php	/^        $this->allowedMethods = include(__DIR__ . '\/..\/Configurations\/methods.php');$/;"	v
+allowedMethods	src/Entities/Route.php	/^    private $allowedMethods;$/;"	v
+allowedMethods	src/Route.php	/^                $allowedMethods = implode(', ', $this->allowedMethods);$/;"	v
+allowedMethods	src/Route.php	/^        $this->allowedMethods = include __DIR__ . '\/methods.php';$/;"	v
+allowedMethods	src/Route.php	/^    private $allowedMethods;$/;"	v
+allowedMethods	src/RoutesCollection.php	/^        $this->allowedMethods = include(__DIR__ . '\/Configurations\/methods.php');$/;"	v
+bundleRouteInformation	src/Dispatcher.php	/^    private function bundleRouteInformation($matchedRoute)$/;"	f
+closeTagStart	src/Entities/RouteComponent.php	/^        $closeTagStart = strripos($this->component, self::PATTERN_CLOSING_TOKEN) - $openTagStart;$/;"	v
+component	src/Entities/RouteComponent.php	/^        $this->component = $component;$/;"	v
+component	src/Entities/RouteComponent.php	/^        return $this->component == self::EAGER_COMPONENT_TOKEN;$/;"	v
+component	src/Entities/RouteComponent.php	/^    private $component;$/;"	v
+component	src/Entities/UrlComponent.php	/^        $this->component = $component;$/;"	v
+component	src/Entities/UrlComponent.php	/^    private $component;$/;"	v
+component	src/RouteComponent.php	/^        $this->component = $component;$/;"	v
+component	src/RouteComponent.php	/^    private $component;$/;"	v
+componentIndex	src/Dispatcher.php	/^            $componentIndex = -1;$/;"	v
+components	src/Entities/Route.php	/^            $components = ['\/'];$/;"	v
+components	src/Entities/Route.php	/^        $components = preg_split('\/\\\/\/', $this->url, null, PREG_SPLIT_NO_EMPTY);$/;"	v
+components	src/Entities/Url.php	/^            $components = ['\/'];$/;"	v
+components	src/Entities/Url.php	/^        $components = preg_split('\/\\\/\/', $this->url, null, PREG_SPLIT_NO_EMPTY);$/;"	v
+components	src/Entities/Url.php	/^    private $components;$/;"	v
+components	src/Entities/Url.php	/^    public function components()$/;"	f
+components	src/Route.php	/^        $components = preg_split('\/\\\/\/', $this->url, null, PREG_SPLIT_NO_EMPTY);$/;"	v
+components	src/Url.php	/^    public function components()$/;"	f
+components	tests/UrlTest.php	/^        $components = $url->components();$/;"	v
+containsEagerComponent	src/Entities/Route.php	/^                $this->containsEagerComponent = true;$/;"	v
+containsEagerComponent	src/Entities/Route.php	/^    private $containsEagerComponent = false;$/;"	v
+containsEagerComponent	src/Entities/Route.php	/^    public function containsEagerComponent() {$/;"	f
+cutOffQueryString	src/Entities/Url.php	/^    private function cutOffQueryString()$/;"	f
+cutOffQueryString	src/Url.php	/^    private function cutOffQueryString()$/;"	f
+dispatch	src/Dispatcher.php	/^    public function dispatch()$/;"	f
+dispatcher	index.php	/^$dispatcher = new Dispatcher($url, $method);$/;"	v
+dispatcher	src/Router.php	/^        $this->dispatcher = $dispatcher;$/;"	v
+dispatcher	src/Router.php	/^    private $dispatcher;$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/about', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/about\/', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/about\/john-doe', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/bar', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/bar\/hey-hey-ho', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/baz\/fuzz\/', 'DELETE');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/baz\/fuzz\/something', 'DELETE');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/boo', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo', 'DELETE');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo', 'OPTIONS');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo', 'POST');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/123', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/John\/Parker\/Doe\/30\/male', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/a', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/b', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/bar', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/bar\/baz\/sam\/john\/bob', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/c', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/john-doe-1', 'POST');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/some-bar-2', 'GET');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/some-bar-2', 'POST');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('\/foo\/some-bar-4', 'POST');$/;"	v
+dispatcher	tests/RouterTest.php	/^        $dispatcher = new Dispatcher('about', 'GET');$/;"	v
+expect	tests/RouteComponentTest.php	/^        $expect = 'name';$/;"	v
+expect	tests/RouteComponentTest.php	/^        $expect = '{name}';$/;"	v
+expect	tests/RouteComponentTest.php	/^        $expect = false;$/;"	v
+expect	tests/RouteComponentTest.php	/^        $expect = true;$/;"	v
+expect	tests/RouterTest.php	/^        $expect = '\/';$/;"	v
+expect	tests/RouterTest.php	/^        $expect = '\/about';$/;"	v
+expect	tests/RouterTest.php	/^        $expect = '\/about\/john';$/;"	v
+expect	tests/RouterTest.php	/^        $expect = '\/bar\/cheeze';$/;"	v
+expect	tests/RouterTest.php	/^        $expect = [$/;"	v
+expect	tests/RouterTest.php	/^        $expect = false;$/;"	v
+expect	tests/RouterTest.php	/^        $expect = null; $/;"	v
+expect	tests/RouterTest.php	/^        $expect = null; \/\/ No matched route.$/;"	v
+expect	tests/RouterTest.php	/^        $expect = null;$/;"	v
+expect	tests/RoutesCollectionTest.php	/^        $expect = [$/;"	v
+expect	tests/UrlComponentTest.php	/^        $expect = 'name';$/;"	v
+expect	tests/UrlComponentTest.php	/^        $expect = true;$/;"	v
+expect	tests/UrlTest.php	/^        $expect = '\/about';$/;"	v
+expect	tests/UrlTest.php	/^        $expect = true;$/;"	v
+for	src/Configurations/Index.php	/^ * It's a simple enumeration class for indexes.$/;"	c
+for	src/Index.php	/^ * It's a simple enumeration class for indexes.$/;"	c
+get	src/Entities/RouteComponent.php	/^    public function get()$/;"	f
+get	src/Entities/Url.php	/^    public function get()$/;"	f
+get	src/Entities/UrlComponent.php	/^    public function get()$/;"	f
+get	src/RouteComponent.php	/^    public function get()$/;"	f
+get	src/Url.php	/^    public function get()$/;"	f
+getNormalized	src/Entities/RouteComponent.php	/^    public function getNormalized()$/;"	f
+getNormalized	src/RouteComponent.php	/^    public function getNormalized()$/;"	f
+handler	src/Entities/Route.php	/^        $this->handler = $routeData[Index::HANDLER];$/;"	v
+handler	src/Entities/Route.php	/^    private $handler;$/;"	v
+handler	src/Entities/Route.php	/^    public function handler()$/;"	f
+handler	src/Route.php	/^        $this->handler = $routeData[Index::HANDLER];$/;"	v
+handler	src/Route.php	/^    private $handler;$/;"	v
+handler	src/Route.php	/^    public function handler()$/;"	f
+isCompulsory	src/Entities/RouteComponent.php	/^    public function isCompulsory()$/;"	f
+isCompulsory	src/RouteComponent.php	/^    public function isCompulsory()$/;"	f
+isCompulsory	tests/RouteComponentTest.php	/^        $isCompulsory = $routeComponent->isCompulsory();$/;"	v
+isEager	src/Entities/RouteComponent.php	/^    public function isEager()$/;"	f
+isEager	tests/RouteComponentTest.php	/^        $isEager = $routeComponent->isEager();$/;"	v
+isEager	tests/RouteComponentTest.php	/^        $isEager = $routeComponent->isParameter();$/;"	v
+isOptional	src/Entities/RouteComponent.php	/^    public function isOptional()$/;"	f
+isOptional	src/RouteComponent.php	/^    public function isOptional()$/;"	f
+isOptional	tests/RouteComponentTest.php	/^        $isOptional = $routeComponent->isOptional();$/;"	v
+isParameter	src/Entities/RouteComponent.php	/^    public function isParameter()$/;"	f
+isParameter	tests/RouteComponentTest.php	/^        $isParameter = $routeComponent->isParameter();$/;"	v
+isPattern	src/Entities/RouteComponent.php	/^    public function isPattern() $/;"	f
+isPattern	tests/RouteComponentTest.php	/^        $isPattern = $routeComponent->isPattern();$/;"	v
+isUrlObject	tests/UrlTest.php	/^        $isUrlObject = $url instanceof Url;$/;"	v
+match	index.php	/^$match = $router->run();$/;"	v
+match	tests/RouterTest.php	/^        $match = $router->run();$/;"	v
+matchedRoute	src/Dispatcher.php	/^                $matchedRoute = $route;$/;"	v
+matchedRoute	src/Dispatcher.php	/^        $matchedRoute = null;$/;"	v
+matchesPattern	src/Entities/RouteComponent.php	/^    public function matchesPattern($urlComponentString) {$/;"	f
+mathces	tests/RouteComponentTest.php	/^        $mathces = $routeComponent->matchesPattern('a');$/;"	v
+mathces	tests/RouteComponentTest.php	/^        $mathces = $routeComponent->matchesPattern('baz');$/;"	v
+mathces	tests/RouteComponentTest.php	/^        $mathces = $routeComponent->matchesPattern('baz-5');$/;"	v
+mathces	tests/RouteComponentTest.php	/^        $mathces = $routeComponent->matchesPattern('bazz');$/;"	v
+mathces	tests/RouteComponentTest.php	/^        $mathces = $routeComponent->matchesPattern('r');$/;"	v
+method	index.php	/^$method = $_SERVER['REQUEST_METHOD'];$/;"	v
+method	src/Dispatcher.php	/^        $this->method = $method;$/;"	v
+method	src/Dispatcher.php	/^    private $method;$/;"	v
+method	src/Resolver.php	/^        foreach ($this->routesCollection->routes() as $method => $routes) {$/;"	v
+method	src/RoutesCollection.php	/^        foreach ($this->routes as $method => $routes) {$/;"	v
+methods	src/Entities/Route.php	/^            $this->methods = explode('|', $this->methods[0]);$/;"	v
+methods	src/Entities/Route.php	/^        $this->methods = [strtoupper($routeMethods)];$/;"	v
+methods	src/Entities/Route.php	/^    private $methods;$/;"	v
+methods	src/Entities/Route.php	/^    public function methods()$/;"	f
+methods	src/Route.php	/^            $this->methods = explode('|', $this->methods[0]);$/;"	v
+methods	src/Route.php	/^        $this->methods = [strtoupper($routeMethods)];$/;"	v
+methods	src/Route.php	/^    private $methods;$/;"	v
+methods	src/Route.php	/^    public function methods()$/;"	f
+name	src/Entities/Route.php	/^            $this->name = $routeData[Index::NAME];$/;"	v
+name	src/Entities/Route.php	/^        $this->name = null;$/;"	v
+name	src/Entities/Route.php	/^    private $name;$/;"	v
+name	src/Entities/Route.php	/^    public function name()$/;"	f
+name	src/Route.php	/^            $this->name = $routeData[Index::NAME];$/;"	v
+name	src/Route.php	/^        $this->name = null;$/;"	v
+name	src/Route.php	/^    private $name;$/;"	v
+name	src/Route.php	/^    public function name()$/;"	f
+normalize	src/Entities/Url.php	/^    private function normalize()$/;"	f
+normalize	src/Url.php	/^    private function normalize()$/;"	f
+normalized	src/Entities/RouteComponent.php	/^            $normalized = substr($normalized, 0, strpos($normalized, ':'));$/;"	v
+normalized	src/Entities/RouteComponent.php	/^        $normalized = ltrim(rtrim($this->component, '}'), '{');$/;"	v
+normalized	src/Entities/RouteComponent.php	/^        $normalized = rtrim($normalized, '?');$/;"	v
+normalized	src/Resolver.php	/^            $normalized = $component->getNormalized();$/;"	v
+normalized	src/RouteComponent.php	/^        $normalized = ltrim(rtrim($this->component, '}'), '{');$/;"	v
+normalized	src/RouteComponent.php	/^        $normalized = rtrim($normalized, '?');$/;"	v
+ok	tests/UrlTest.php	/^                $ok = false;$/;"	v
+ok	tests/UrlTest.php	/^        $ok = true;$/;"	v
+openTagStart	src/Entities/RouteComponent.php	/^        $openTagStart = strpos($this->component, self::PATTERN_OPENING_TOKEN) + 1;$/;"	v
+params	src/Dispatcher.php	/^    private $params = [];$/;"	v
+params	src/Resolver.php	/^    private function resolveRoute(Route $route, $params = [])$/;"	v
+params	src/Resolver.php	/^    public function resolve($routeName, $params = [])$/;"	v
+params	src/Router.php	/^    public function url($routeName, $params = [])$/;"	v
+pattern	src/Entities/RouteComponent.php	/^            $pattern = $this->patternAliases[$pattern];$/;"	v
+pattern	src/Entities/RouteComponent.php	/^            $pattern = '#^' . $pattern . '$#';$/;"	v
+pattern	src/Entities/RouteComponent.php	/^        $pattern = trim(substr($this->component, $openTagStart, $closeTagStart));$/;"	v
+patternAliases	src/Entities/RouteComponent.php	/^    private $patternAliases = [$/;"	v
+perform	src/Dispatcher.php	/^    private function perform()$/;"	f
+prepareCollection	src/RoutesCollection.php	/^    private function prepareCollection()$/;"	f
+processUrl	src/Entities/Url.php	/^    private function processUrl()$/;"	f
+processUrl	src/Url.php	/^    private function processUrl()$/;"	f
+queryStringStartIndex	src/Entities/Url.php	/^        $queryStringStartIndex = strpos($this->url, '?');$/;"	v
+queryStringStartIndex	src/Url.php	/^        $queryStringStartIndex = strpos($this->url, '?');$/;"	v
+rc	tests/RouteComponentTest.php	/^        $rc = $routeComponent->get();$/;"	v
+rc	tests/RouteComponentTest.php	/^        $rc = $routeComponent->getNormalized();$/;"	v
+recognize	src/Entities/Route.php	/^    private function recognize($routeData)$/;"	f
+recognize	src/Route.php	/^    private function recognize($routeData)$/;"	f
+registerRoute	src/RoutesCollection.php	/^    private function registerRoute($routeData)$/;"	f
+resolve	src/Resolver.php	/^    public function resolve($routeName, $params = [])$/;"	f
+resolveRoute	src/Resolver.php	/^    private function resolveRoute(Route $route, $params = [])$/;"	f
+resolver	src/Router.php	/^        $this->resolver = new Resolver($routesCollection);$/;"	v
+resolver	src/Router.php	/^    private $resolver;$/;"	v
+respondsToMany	src/Entities/Route.php	/^    private function respondsToMany($methods)$/;"	f
+respondsToMany	src/Route.php	/^    private function respondsToMany($methods)$/;"	f
+route	src/RoutesCollection.php	/^        $route = new Route($routeData);$/;"	v
+route	src/RoutesCollection.php	/^    public function route($routeName)$/;"	f
+route	tests/RouteTest.php	/^        $route = [$/;"	v
+route	tests/RouteTest.php	/^        $route = ['GET', '\/', 'HomeController@index', null];$/;"	v
+route	tests/RouteTest.php	/^        $route = new Route($route);$/;"	v
+routeComponent	src/Entities/Route.php	/^            $routeComponent = new RouteComponent($component);$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('*');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('notParameter');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{compulsory}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:( (abc)\\.[a-z0-9] )}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:( [a-zA-Z0-9] )?}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:( [a-z]{0,3} )}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:( [a-z]{0,3}-([0-9]) )}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:( [abc] )}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:( a-zA-Z0-5-_ )}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:( s )}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name:(s)}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name?}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{name}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{notCompulsory?}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{notEager}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{notOptional}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{notPattern}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{optParameter?}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{optional?}');$/;"	v
+routeComponent	tests/RouteComponentTest.php	/^        $routeComponent = new RouteComponent('{parameter}');$/;"	v
+routeComponents	src/Dispatcher.php	/^            $routeComponents = $route->urlComponents();$/;"	v
+routeInformation	src/Dispatcher.php	/^        $routeInformation = $this->bundleRouteInformation($matchedRoute);$/;"	v
+routeInformation	src/Dispatcher.php	/^        $routeInformation = [$/;"	v
+routeMatches	src/Dispatcher.php	/^                        $routeMatches = false;$/;"	v
+routeMatches	src/Dispatcher.php	/^                    $routeMatches = ! $routeComponent->isParameter() || $routeComponent->isOptional();$/;"	v
+routeMatches	src/Dispatcher.php	/^                    $routeMatches = false;$/;"	v
+routeMatches	src/Dispatcher.php	/^                    $routeMatches = true;$/;"	v
+routeMatches	src/Dispatcher.php	/^            $routeMatches = true;$/;"	v
+routeMethods	src/Entities/Route.php	/^        $routeMethods = array_shift($routeData);$/;"	v
+routeMethods	src/Route.php	/^        $routeMethods = array_shift($routeData);$/;"	v
+router	index.php	/^$router = new Router($routesCollection, $dispatcher);$/;"	v
+router	tests/RouterTest.php	/^        $router = new Router($routesCollection, $dispatcher);$/;"	v
+routes	index.php	/^$routes = [$/;"	v
+routes	src/Dispatcher.php	/^        $routes = $this->routesCollection->routes();$/;"	v
+routes	src/RoutesCollection.php	/^    private $routes = [];$/;"	v
+routes	src/RoutesCollection.php	/^    public function routes()$/;"	f
+routes	tests/RouterTest.php	/^        $this->routes = [$/;"	v
+routes	tests/RoutesCollectionTest.php	/^        $routes = [$/;"	v
+routesCollection	index.php	/^$routesCollection = new RoutesCollection($routes);$/;"	v
+routesCollection	src/Dispatcher.php	/^        $this->routesCollection = $routesCollection;$/;"	v
+routesCollection	src/Dispatcher.php	/^    private $routesCollection;$/;"	v
+routesCollection	src/Resolver.php	/^        $this->routesCollection = $routesCollection;$/;"	v
+routesCollection	src/Resolver.php	/^    private $routesCollection;$/;"	v
+routesCollection	src/Router.php	/^        $this->routesCollection = $routesCollection;$/;"	v
+routesCollection	src/Router.php	/^    private $routesCollection;$/;"	v
+routesCollection	tests/RouterTest.php	/^        $routesCollection = new RoutesCollection($this->routes);$/;"	v
+routesCollection	tests/RouterTest.php	/^        $routesCollection = new RoutesCollection([$/;"	v
+routesCollection	tests/RoutesCollectionTest.php	/^        $routesCollection = new RoutesCollection($routes);$/;"	v
+run	src/Router.php	/^    public function run()$/;"	f
+setRoutesCollection	src/Dispatcher.php	/^    public function setRoutesCollection(RoutesCollection $routesCollection)$/;"	f
+setUp	tests/RouterTest.php	/^    public function setUp()$/;"	f
+setUrlComponent	src/Entities/UrlComponent.php	/^    private function setUrlComponent($component)$/;"	f
+spreadRoutes	src/RoutesCollection.php	/^    private function spreadRoutes(array $routes)$/;"	f
+testComplexRoutes	tests/RouterTest.php	/^    public function testComplexRoutes()$/;"	f
+testComponents	tests/UrlTest.php	/^    public function testComponents()$/;"	f
+testGet	tests/RouteComponentTest.php	/^    public function testGet()$/;"	f
+testGet	tests/UrlComponentTest.php	/^    public function testGet()$/;"	f
+testGet	tests/UrlTest.php	/^    public function testGet()$/;"	f
+testGetNormalized	tests/RouteComponentTest.php	/^    public function testGetNormalized()$/;"	f
+testIsCompulsory	tests/RouteComponentTest.php	/^    public function testIsCompulsory()$/;"	f
+testIsEager	tests/RouteComponentTest.php	/^    public function testIsEager() $/;"	f
+testIsOptional	tests/RouteComponentTest.php	/^    public function testIsOptional() $/;"	f
+testIsParameter	tests/RouteComponentTest.php	/^    public function testIsParameter() $/;"	f
+testIsPattern	tests/RouteComponentTest.php	/^    public function testIsPattern()$/;"	f
+testItCanInstantiate	tests/RouteTest.php	/^    public function testItCanInstantiate()$/;"	f
+testItCanMatchSimpleRouteWithoutParameters	tests/RouterTest.php	/^    public function testItCanMatchSimpleRouteWithoutParameters()$/;"	f
+testItDoesntMatchNonexistingRoute	tests/RouterTest.php	/^    public function testItDoesntMatchNonexistingRoute()$/;"	f
+testItFailsOnCompulsoryParameters	tests/RouterTest.php	/^    public function testItFailsOnCompulsoryParameters()$/;"	f
+testItGeneratesTheProperUrlFromRouteName	tests/RouterTest.php	/^    public function testItGeneratesTheProperUrlFromRouteName()$/;"	f
+testItInstantiates	tests/RouteComponentTest.php	/^    public function testItInstantiates()$/;"	f
+testItInstantiates	tests/UrlComponentTest.php	/^    public function testItInstantiates()$/;"	f
+testItInstantiates	tests/UrlTest.php	/^    public function testItInstantiates()$/;"	f
+testItMatchesPattern	tests/RouteComponentTest.php	/^    public function testItMatchesPattern()$/;"	f
+testItMatchesSimpleRouteWithCompulsoryParameter	tests/RouterTest.php	/^    public function testItMatchesSimpleRouteWithCompulsoryParameter()$/;"	f
+testItMatchesSimpleRouteWithOptionalParameter	tests/RouterTest.php	/^    public function testItMatchesSimpleRouteWithOptionalParameter()$/;"	f
+testItMatchesSlash	tests/RouterTest.php	/^    public function testItMatchesSlash()$/;"	f
+testItMatchesStar	tests/RouterTest.php	/^    public function testItMatchesStar()$/;"	f
+testItMatchesWithoutStartingSlash	tests/RouterTest.php	/^    public function testItMatchesWithoutStartingSlash()$/;"	f
+testItRecognizesPatternAliases	tests/RouterTest.php	/^    public function testItRecognizesPatternAliases()$/;"	f
+testItRecognizesPatterns	tests/RouterTest.php	/^    public function testItRecognizesPatterns()$/;"	f
+testItRecognizesPatternsOnOptionalParameters	tests/RouterTest.php	/^    public function testItRecognizesPatternsOnOptionalParameters()$/;"	f
+testItRecognizesRouteInformtion	tests/RouteTest.php	/^    public function testItRecognizesRouteInformtion()$/;"	f
+testItRegistersRouteCorrectly	tests/RoutesCollectionTest.php	/^    public function testItRegistersRouteCorrectly()$/;"	f
+testItThrowsExceptionForInvalidMethod	tests/RouteTest.php	/^    public function testItThrowsExceptionForInvalidMethod()$/;"	f
+testRequestMethods	tests/RouterTest.php	/^    public function testRequestMethods()$/;"	f
+theUrl	tests/UrlTest.php	/^        $theUrl = $url->get();$/;"	v
+uc	tests/UrlComponentTest.php	/^        $uc = $urlComponent->get();$/;"	v
+url	index.php	/^$url = $_SERVER['REQUEST_URI'];$/;"	v
+url	src/Dispatcher.php	/^        $this->url = new Url($url);$/;"	v
+url	src/Dispatcher.php	/^    private $url;$/;"	v
+url	src/Entities/Route.php	/^        $this->url = $routeData[Index::URL];$/;"	v
+url	src/Entities/Route.php	/^    private $url;$/;"	v
+url	src/Entities/Route.php	/^    public function url()$/;"	f
+url	src/Entities/Url.php	/^        $this->url = $this->processUrl();$/;"	v
+url	src/Entities/Url.php	/^        $this->url = $url;$/;"	v
+url	src/Entities/Url.php	/^        $this->url = '\/' . ltrim($this->url, '\/');$/;"	v
+url	src/Entities/Url.php	/^        $this->url = ($queryStringStartIndex) $/;"	v
+url	src/Entities/Url.php	/^    private $url;$/;"	v
+url	src/Resolver.php	/^        $url = [];$/;"	v
+url	src/Route.php	/^        $this->url = $routeData[Index::URL];$/;"	v
+url	src/Route.php	/^    private $url;$/;"	v
+url	src/Route.php	/^    public function url()$/;"	f
+url	src/Router.php	/^    public function url($routeName, $params = [])$/;"	f
+url	src/Url.php	/^        $this->url = $this->processUrl();$/;"	v
+url	src/Url.php	/^        $this->url = $url;$/;"	v
+url	src/Url.php	/^        $this->url = '\/' . ltrim($this->url, '\/');$/;"	v
+url	src/Url.php	/^        $this->url = ($queryStringStartIndex) $/;"	v
+url	src/Url.php	/^    private $url;$/;"	v
+url	tests/RouterTest.php	/^        $url = $router->url('about');$/;"	v
+url	tests/RouterTest.php	/^        $url = $router->url('aboutSomebody', ['name' => 'John']);$/;"	v
+url	tests/RouterTest.php	/^        $url = $router->url('bar', ['baz' => 'cheeze']);$/;"	v
+url	tests/RouterTest.php	/^        $url = $router->url('home', ['baz' => 'cheeze']);$/;"	v
+url	tests/RouterTest.php	/^        $url = $router->url('nonExisting', ['foo' => 'bar']);$/;"	v
+url	tests/UrlTest.php	/^        $url = new Url('\/about');$/;"	v
+url	tests/UrlTest.php	/^        $url = new Url('\/about?name=Borislav');$/;"	v
+url	tests/UrlTest.php	/^        $url = new Url('\/foo\/bar\/baz\/fuzz');$/;"	v
+urlComponent	src/Dispatcher.php	/^                    $urlComponent = $urlComponents[$componentIndex];$/;"	v
+urlComponent	tests/UrlComponentTest.php	/^        $urlComponent = new UrlComponent('name');$/;"	v
+urlComponents	src/Dispatcher.php	/^        $urlComponents = $this->url->components();$/;"	v
+urlComponents	src/Entities/Route.php	/^    private $urlComponents;$/;"	v
+urlComponents	src/Entities/Route.php	/^    public function urlComponents()$/;"	f
+urlComponents	src/Route.php	/^    private $urlComponents;$/;"	v
+urlComponents	src/Route.php	/^    public function urlComponents()$/;"	f
+valid	src/Entities/Route.php	/^    private function valid($method)$/;"	f
+valid	src/Route.php	/^    private function valid($method)$/;"	f

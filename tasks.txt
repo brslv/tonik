@@ -1,0 +1,2 @@
+- Implement a reverse route resolving (by name).
+- Implement a * pattern (matches all - stops at the first slash and matches it)
