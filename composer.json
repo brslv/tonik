@@ -1,5 +1,19 @@
 {
-    "require": {},
+    "name": "tonik/tonik",
+    "description": "The fresh PHP router.",
+    "keywords": ["router", "routing"],
+    "homepage": "https://github.com/brslv/tonik-router",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Borislav Grigorov",
+            "email": "borislav.b.grigorov@gmail.com",
+            "homepage": "http://borislav.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "5.4.*"
     },
