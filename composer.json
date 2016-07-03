@@ -2,7 +2,7 @@
     "name": "tonik/tonik",
     "description": "The fresh PHP router.",
     "keywords": ["router", "routing"],
-    "homepage": "https://github.com/brslv/tonik-router",
+    "homepage": "https://github.com/brslv/tonik",
     "license": "MIT",
     "authors": [
         {
