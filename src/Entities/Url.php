@@ -1,11 +1,11 @@
 <?php
 
-namespace Borislav\Broute\Entities;
+namespace Tonik\Entities;
 
 /**
  * Class Url
  *
- * @package Borislav\Broute
+ * @package Tonik\Entities.
  * @author Borislav Grigorov <borislav.b.grigorov@gmail.com>
  */
 class Url 

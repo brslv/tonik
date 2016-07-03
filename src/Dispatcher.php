@@ -1,16 +1,16 @@
 <?php
 
-namespace Borislav\Broute;
+namespace Tonik;
 
-use Borislav\Broute\Entities\Url;
-use Borislav\Broute\Configurations\Index;
-use Borislav\Broute\Entities\RouteComponent;
-use Borislav\Broute\RoutesCollection;
+use Tonik\Entities\Url;
+use Tonik\Configurations\Index;
+use Tonik\Entities\RouteComponent;
+use Tonik\RoutesCollection;
 
 /**
  * Class Dispatcher
  *
- * @package Borislav\Broute.
+ * @package Tonik.
  * @author Borislav Grigorov <borislav.b.grigorov@gmail.com>
  */
 class Dispatcher
@@ -79,43 +79,6 @@ class Dispatcher
      */
     private function perform()
     {
-        /** -------------------------------------------------------------------------------------- **
-         * The logic here is simple.
-         * -
-         *
-         * Iterating through each route, split it on [/]
-         * and compare each route's part (component) with it's coresponding url part (component).
-         *
-         * If a match is found, stop the iteration. If no - continue iterating.
-         *
-         * -
-         * Details. 
-         * -
-         * First - iterating through each route, 
-         * check if the count of the route's components is less then the count of the url components.
-         * If it's less, then there's no reason to check this route further more. It's not the cool guy.
-         *
-         * Second - iterating through each route's component,
-         * check if:
-         *      1. It has a corresponding value in the url
-         *          > NO: If the current route's component is not a parameter (such as {name} or {name?})
-         *                OR is not optional (such as {name?})
-         *                THEN stop iterating through the route's components -> this is not our route.
-         *
-         *      2. The current route's component is NOT parameter and it matches the given url component
-         *          
-         *      3. If the route's component has a pattern (regex) constraint - check it.
-         *
-         *      4. Finally - if the route is compulsory or optional - put the corresponding url value
-         *                   in the parameters array.
-         *
-         * Third - if a route is matched - stop iterating the routes.
-         *
-         * Fourth - return the matched route information or null (if no route has been matched).
-         *
-         * That's it.
-         ** -------------------------------------------------------------------------------------- */
-
         $matchedRoute = null;
         $routes = $this->routesCollection->routes();
         $urlComponents = $this->url->components();

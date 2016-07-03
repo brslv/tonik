@@ -1,15 +1,15 @@
 <?php
 
-namespace Borislav\Broute;
+namespace Tonik;
 
-use Borislav\Broute\Resolver;
-use Borislav\Broute\Dispatcher;
-use Borislav\Broute\RoutesCollection;
+use Tonik\Resolver;
+use Tonik\Dispatcher;
+use Tonik\RoutesCollection;
 
 /**
  * Class Router
  *
- * @package Borislav\Broute.
+ * @package Tonik.
  * @author Borislav Grigorov <borislav.b.grigorov@gmail.com>
  */
 class Router

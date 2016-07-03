@@ -1,15 +1,15 @@
 <?php
 
-namespace Borislav\Broute\Entities;
+namespace Tonik\Entities;
 
 use InvalidArgumentException;
-use Borislav\Broute\Configurations\Index;
-use Borislav\Broute\Entities\RouteComponent;
+use Tonik\Configurations\Index;
+use Tonik\Entities\RouteComponent;
 
 /**
  * Class Route
  *
- * @package Borislav\Broute.
+ * @package Tonik\Entities.
  * @author Borislav Grigorov <borislav.b.grigorov@gmail.com>
  */
 class Route 

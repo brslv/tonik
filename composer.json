@@ -5,7 +5,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Borislav\\Broute\\": "./src"
+            "Tonik\\": "./src"
         }
     }
 }

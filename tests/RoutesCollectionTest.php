@@ -1,7 +1,7 @@
 <?php
 
-use Borislav\Broute\Entities\Route;
-use Borislav\Broute\RoutesCollection;
+use Tonik\Entities\Route;
+use Tonik\RoutesCollection;
 
 class RoutesCollectionTest extends PHPUnit_Framework_TestCase
 {

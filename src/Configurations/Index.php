@@ -1,13 +1,13 @@
 <?php
 
-namespace Borislav\Broute\Configurations;
+namespace Tonik\Configurations;
 
 /**
  * Class Index
  *
  * It's a simple enumeration class for indexes.
  *
- * @package Borislav\Broute.
+ * @package Tonik\Entities.
  * @author Borislav Grigorov <borislav.b.grigorov@gmail.com>
  */
 class Index 

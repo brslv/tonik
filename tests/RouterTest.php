@@ -1,8 +1,8 @@
 <?php
 
-use Borislav\Broute\Router;
-use Borislav\Broute\Dispatcher;
-use Borislav\Broute\RoutesCollection;
+use Tonik\Router;
+use Tonik\Dispatcher;
+use Tonik\RoutesCollection;
 
 class RouterTest extends PHPUnit_Framework_TestCase 
 {

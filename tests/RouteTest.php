@@ -1,6 +1,6 @@
 <?php
 
-use Borislav\Broute\Entities\Route;
+use Tonik\Entities\Route;
 
 class RouteTest extends PHPUnit_Framework_TestCase 
 {

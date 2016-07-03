@@ -1,7 +1,7 @@
 <?php
 
-use Borislav\Broute\Entities\Url;
-use Borislav\Broute\Entities\RouteComponent;
+use Tonik\Entities\Url;
+use Tonik\Entities\RouteComponent;
 
 class RouteComponentTest extends PHPUnit_Framework_TestCase 
 {
