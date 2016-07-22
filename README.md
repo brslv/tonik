@@ -1,4 +1,4 @@
-# TonikRouter [![Build Status](https://travis-ci.org/brslv/tonik-router.svg?branch=master)](https://travis-ci.org/brslv/tonik-router)
+# TonikRouter [![Build Status](https://travis-ci.org/brslv/tonik.svg?branch=master)](https://travis-ci.org/brslv/tonik)
 
 Tonik is a simple PHP router with support for optional parameters, patterns and url resolving by route name.
 
