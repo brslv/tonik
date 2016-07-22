@@ -62,7 +62,7 @@ $match = [
 These were the basics. But **tonik** provides some nice route tricks you can make. Let's see.
 
 ```php
-['GET', '/about/{name}', 'PagesController@about', 'about'] # {name?} is an optional parameter.
+['GET', '/about/{name?}', 'PagesController@about', 'about'] # {name?} is an optional parameter.
 ```
 
 ```php
@@ -81,7 +81,7 @@ If you need something custom, you can pass a regular expression to the brackets.
 ['POST', 'foo/{slug:( ([a-z]+)-([a-z]+)-([012]+) )?}', 'PatternsController@complex', 'complex'],
 ```
 
-This will match only POST requests. The slug parameter should be in the form "something a-z"-"something a-z again"-"something 0-9". For example /foo/bar-baz-1 is a valid route.
+This will match only POST requests. The slug parameter should be in the form **"something a-z"-"something a-z again"-"something 0-9"**. You should notice it's also optional. So with or without it this route will be matched. For example **/foo/bar-baz-1** is a valid route. Also just **/foo**. But **/foo/bar** is invalid route, because it doesn't match the regex.
 
 ## That's it.
 Well, that's pretty much all you would need for a simple app. If you want to dive deeper, take a look at the **tests** folder to see how the router works in greater details.
